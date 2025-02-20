@@ -1,0 +1,55 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Jupyter Notebook-specific ignores
+*.ipynb_checkpoints/
+*.ipynb
+
+# Model checkpoints and large files
+model_checkpoints/*
+!.gitignore  # Keep the .gitignore in model_checkpoints if needed
+
+# Image data (assuming these are large or temporary)
+images/*
+!.gitignore  # Keep the .gitignore in images if needed
+
+# Secrets and sensitive information
+secrets.toml
+login.hf.py  # Assuming this contains API keys or credentials
+
+# IDE/editor files
+*.swp
+*.swo
+*.sublime-*
+*.vscode/
+*.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Compiled files or build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environment files (if not already covered)
+.env
+.envrc
+
+# Any other large or generated data
+*.pth  # PyTorch model files
+*.ckpt  # Checkpoint files
+*.h5   # HDF5 files (common for models)
